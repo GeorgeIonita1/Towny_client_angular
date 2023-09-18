@@ -8,8 +8,6 @@ import { HeaderComponent } from './core/components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './core/pages/login/login.component';
 import { RegisterComponent } from './core/pages/register/register.component';
-import { AuthenticationFormComponent } from './core/forms/authentication-form/authentication-form.component';
-import { AuthenticationCardComponent } from './core/components/authentication-card/authentication-card.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +15,6 @@ import { AuthenticationCardComponent } from './core/components/authentication-ca
     HeaderComponent,
     LoginComponent,
     RegisterComponent,
-    AuthenticationFormComponent,
-    AuthenticationCardComponent
   ],
   imports: [
     BrowserModule,
