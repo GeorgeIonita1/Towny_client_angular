@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-content>
+        <h1>Welcome</h1>
+        <app-authentication-form></app-authentication-form>
+        <div *ngIf="isLogin">
+            <span class="span-divider">Continue with</span>
+            <mat-card-actions>
+                <button mat-raised-button color="accent">Facebook</button>
+                <button mat-raised-button color="accent">Google</button>
+                <button mat-raised-button color="accent">LinkedIn</button>
+            </mat-card-actions>
+        </div>
+        <span>Don't have an account <a href="http://google.com" target="_blank">Sign up</a></span>
+    </mat-card-content>
+</mat-card>
