@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { MaterialModule } from './material/material.module';
 import { AuthenticationFormComponent } from './components/authentication/authentication-form/authentication-form.component';
 import { AuthenticationCardComponent } from './components/authentication/authentication-card/authentication-card.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,8 @@ import { AuthenticationCardComponent } from './components/authentication/authent
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
   ],
   exports: [
     MaterialModule,

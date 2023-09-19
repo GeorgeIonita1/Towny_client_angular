@@ -9,7 +9,7 @@
         <input matInput placeholder="Placeholder">
     </mat-form-field>
     
-    <mat-form-field appearance="outline" color="primary">
+    <mat-form-field *ngIf="isLoginCardView" appearance="outline" color="primary">
         <mat-label>Confirm Password</mat-label>
         <input matInput placeholder="Placeholder">
     </mat-form-field>

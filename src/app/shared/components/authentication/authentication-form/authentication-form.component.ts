@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-authentication-form',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./authentication-form.component.css']
 })
 export class AuthenticationFormComponent {
-
+  @Input() isLoginCardView!: boolean;
 }

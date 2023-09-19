@@ -6,15 +6,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { HeaderComponent } from './core/components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { LoginComponent } from './core/pages/login/login.component';
-import { RegisterComponent } from './core/pages/register/register.component';
+import { LoginPageComponent } from './core/pages/login/login.component';
+import { RegisterPageComponent } from './core/pages/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent,
-    RegisterComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthenticationService } from 'src/app/core/services/authentication.service';
 
 @Component({
   selector: 'app-authentication-card',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./authentication-card.component.css']
 })
 export class AuthenticationCardComponent {
-  isLogin = true;
+  isLoginCardView;
+
+  constructor(authService: AuthenticationService) {
+    this.isLoginCardView = authService.getIsLoginCardView();
+  }
 }
