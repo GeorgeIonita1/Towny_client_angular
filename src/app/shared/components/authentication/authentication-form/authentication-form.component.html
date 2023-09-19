@@ -1,17 +1,17 @@
 <form class="auth-form">
     <mat-form-field required appearance="outline" color="primary">
         <mat-label>Email</mat-label>
-        <input matInput placeholder="Placeholder">
+        <input matInput>
     </mat-form-field>
 
     <mat-form-field appearance="outline" color="primary">
         <mat-label>Password</mat-label>
-        <input matInput placeholder="Placeholder">
+        <input matInput>
     </mat-form-field>
     
-    <mat-form-field *ngIf="isLoginCardView" appearance="outline" color="primary">
+    <mat-form-field *ngIf="!isLoginCardView" appearance="outline" color="primary">
         <mat-label>Confirm Password</mat-label>
-        <input matInput placeholder="Placeholder">
+        <input matInput>
     </mat-form-field>
 
     <button mat-raised-button color="primary">Continue</button>

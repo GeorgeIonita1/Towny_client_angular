@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-content>
         <h1>Welcome</h1>
-        <app-authentication-form></app-authentication-form>
+        <app-authentication-form [isLoginCardView]="isLoginCardView"></app-authentication-form>
         <div *ngIf="isLoginCardView">
             <span class="span-divider">Continue with</span>
             <mat-card-actions>

@@ -7,4 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class AuthenticationFormComponent {
   @Input() isLoginCardView!: boolean;
+
+  ngOnInit() {
+    console.log(this.isLoginCardView)
+  }
 }
