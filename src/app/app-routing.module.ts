@@ -12,13 +12,14 @@ const appRoutes: Routes = [
     component: HomePageComponent,
     children: [
       {
-        path: 'views',
+        path: '',
         loadChildren: () => import('./core/features/site-navigation/site-navigation.module')
-          .then(m => m.SiteNavigationModule)
+        .then(m => m.SiteNavigationModule)
       }
-
     ]
-  }
+  },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
