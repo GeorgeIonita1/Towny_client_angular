@@ -4,19 +4,24 @@ import { CommonModule } from '@angular/common';
 import { SiteNavigationRoutingModule } from './site-navigation-routing.module';
 import { MainSectionComponent } from './components/main-section/main-section.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SidebarCategoryBtnComponent } from './components/sidebar-category-btn/sidebar-category-btn.component';
 
 
 @NgModule({
   declarations: [
     MainSectionComponent,
-    DashboardComponent
+    DashboardComponent,
+    SidebarComponent,
+    SidebarCategoryBtnComponent
   ],
   imports: [
     CommonModule,
     SiteNavigationRoutingModule
   ],
   exports: [
-    MainSectionComponent
+    MainSectionComponent,
+    SidebarComponent
   ]
 })
 export class SiteNavigationModule { }
