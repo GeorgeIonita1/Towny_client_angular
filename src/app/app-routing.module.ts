@@ -5,9 +5,20 @@ import { RegisterPageComponent } from './core/pages/register/register.component'
 import { HomePageComponent } from './core/pages/home-page/home-page.component';
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomePageComponent },
   { path: 'login', component: LoginPageComponent },
-  { path: 'register', component: RegisterPageComponent }
+  { path: 'register', component: RegisterPageComponent },
+  {
+    path: 'home',
+    component: HomePageComponent,
+    children: [
+      {
+        path: 'views',
+        loadChildren: () => import('./core/features/site-navigation/site-navigation.module')
+          .then(m => m.SiteNavigationModule)
+      }
+
+    ]
+  }
 ];
 
 @NgModule({

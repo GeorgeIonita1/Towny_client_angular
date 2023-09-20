@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginPageComponent } from './core/pages/login/login.component';
 import { RegisterPageComponent } from './core/pages/register/register.component';
 import { HomePageComponent } from './core/pages/home-page/home-page.component';
+import { SiteNavigationModule } from './core/features/site-navigation/site-navigation.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HomePageComponent } from './core/pages/home-page/home-page.component';
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
+    SiteNavigationModule,
     AppRoutingModule
   ],
   providers: [],
