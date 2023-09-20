@@ -1,8 +1,8 @@
 <mat-card>
     <mat-card-content>
         <h1>Welcome</h1>
-        <app-authentication-form [isLoginCardView]="isLoginCardView"></app-authentication-form>
-        <div *ngIf="isLoginCardView">
+        <app-authentication-form [isLoginMode]="isLoginMode"></app-authentication-form>
+        <div *ngIf="isLoginMode">
             <span class="span-divider">Continue with</span>
             <mat-card-actions>
                 <button mat-raised-button color="accent">Facebook</button>
@@ -10,7 +10,7 @@
                 <button mat-raised-button color="accent">LinkedIn</button>
             </mat-card-actions>
         </div>
-        <span *ngIf="isLoginCardView">Don't have an account <a routerLink="/register">Sign up</a></span>
-        <span *ngIf="!isLoginCardView">Don't have an account <a routerLink="/login">Sign in</a></span>
+        <span *ngIf="isLoginMode">Don't have an account <a routerLink="/register">Sign up</a></span>
+        <span *ngIf="!isLoginMode">Don't have an account <a routerLink="/login">Sign in</a></span>
     </mat-card-content>
 </mat-card>

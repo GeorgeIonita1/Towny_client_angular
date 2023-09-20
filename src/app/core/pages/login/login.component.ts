@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +6,7 @@ import { AuthenticationService } from '../../services/authentication.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginPageComponent {
-  constructor(private authService: AuthenticationService) {
-    this.authService.setIsLoginCardView(true);
-  }
+  isLoginMode = true;
+
+  constructor() {}
 }
