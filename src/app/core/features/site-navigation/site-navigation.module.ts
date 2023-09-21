@@ -8,6 +8,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SidebarCategoryBtnComponent } from './components/sidebar-category-btn/sidebar-category-btn.component';
 import { UsersComponent } from './pages/users/users.component';
 import { CarsComponent } from './pages/cars/cars.component';
+import { MaterialModule } from 'src/app/shared/material/material.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CarsComponent } from './pages/cars/cars.component';
   ],
   imports: [
     CommonModule,
-    SiteNavigationRoutingModule
+    SiteNavigationRoutingModule,
+    MaterialModule
   ],
   exports: [
     MainSectionComponent,

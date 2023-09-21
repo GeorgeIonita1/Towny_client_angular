@@ -1,14 +1,17 @@
 export const navigationLinks = [
     {
         name: 'Dashboard',
-        redirrect: 'dashboard'
+        redirrect: 'dashboard',
+        icon: 'dashboard'
     },
     {
         name: 'Users',
-        redirrect: 'users'
+        redirrect: 'users',
+        icon: 'person'
     },
     {
         name: 'Cars',
-        redirrect: 'cars'
+        redirrect: 'cars',
+        icon: 'agriculture'
     },
 ];
