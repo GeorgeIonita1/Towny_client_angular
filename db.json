@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "Cristi",
+      "status": "available"
+    },
+    {
+      "id": "22",
+      "title": "GGGG",
+      "status": "fffff"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "cats": [
+    {
+      "id": 2,
+      "name": "martha"
+    },
+    {
+      "id": "22",
+      "title": "GGGG",
+      "status": "fffff"
+    }
+  ],
+  "dogs": [
+    {
+      "id": 23,
+      "name": "jack"
+    },
+    {
+      "id": "22",
+      "title": "GGGG",
+      "status": "fffff"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
