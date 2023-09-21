@@ -9,6 +9,7 @@ import { SidebarCategoryBtnComponent } from './components/sidebar-category-btn/s
 import { UsersComponent } from './pages/users/users.component';
 import { CarsComponent } from './pages/cars/cars.component';
 import { MaterialModule } from 'src/app/shared/material/material.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -18,12 +19,13 @@ import { MaterialModule } from 'src/app/shared/material/material.module';
     SidebarComponent,
     SidebarCategoryBtnComponent,
     UsersComponent,
-    CarsComponent
+    CarsComponent,
   ],
   imports: [
     CommonModule,
     SiteNavigationRoutingModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ],
   exports: [
     MainSectionComponent,

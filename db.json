@@ -1,48 +1,36 @@
 {
-  "posts": [
+  "admins": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
+      "name": "George",
+      "email": "g3orrg301@gmail.com",
+      "password": "password"
+    }
+  ],
+  "users": [
     {
-      "id": "2",
-      "title": "Cristi",
-      "status": "available"
+      "id": 123,
+      "name": "driver1",
+      "email": "driver1@yahoo.com",
+      "password": "password"
     },
     {
       "id": "22",
-      "title": "GGGG",
-      "status": "fffff"
+      "name": "Florin",
+      "email": "florin@hotmail.com",
+      "password": "paswweredf"
     }
   ],
-  "comments": [
+  "cars": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "cats": [
-    {
-      "id": 2,
-      "name": "martha"
+      "name": "car1",
+      "inUse": false
     },
     {
-      "id": "22",
-      "title": "GGGG",
-      "status": "fffff"
-    }
-  ],
-  "dogs": [
-    {
-      "id": 23,
-      "name": "jack"
-    },
-    {
-      "id": "22",
-      "title": "GGGG",
-      "status": "fffff"
+      "id": 1,
+      "name": "car1",
+      "inUse": 123
     }
   ],
   "profile": {
