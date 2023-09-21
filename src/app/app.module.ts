@@ -10,6 +10,7 @@ import { LoginPageComponent } from './core/pages/login/login.component';
 import { RegisterPageComponent } from './core/pages/register/register.component';
 import { HomePageComponent } from './core/pages/home-page/home-page.component';
 import { SiteNavigationModule } from './core/features/site-navigation/site-navigation.module';
+import { AuthenticationModule } from './core/features/authentication/authentication.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SiteNavigationModule } from './core/features/site-navigation/site-navig
     BrowserAnimationsModule,
     SharedModule,
     SiteNavigationModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthenticationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
