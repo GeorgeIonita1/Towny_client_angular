@@ -6,6 +6,8 @@ import { MainSectionComponent } from './components/main-section/main-section.com
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SidebarCategoryBtnComponent } from './components/sidebar-category-btn/sidebar-category-btn.component';
+import { UsersComponent } from './pages/users/users.component';
+import { CarsComponent } from './pages/cars/cars.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { SidebarCategoryBtnComponent } from './components/sidebar-category-btn/s
     MainSectionComponent,
     DashboardComponent,
     SidebarComponent,
-    SidebarCategoryBtnComponent
+    SidebarCategoryBtnComponent,
+    UsersComponent,
+    CarsComponent
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { INavigationLinks } from '../../models/navigation.model';
 
 @Component({
   selector: 'app-sidebar-category-btn',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar-category-btn.component.css']
 })
 export class SidebarCategoryBtnComponent {
-
+  @Input() link: INavigationLinks | undefined;
 }
