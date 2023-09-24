@@ -13,7 +13,7 @@ const appRoutes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('./core/features/site-navigation/site-navigation.module')
+        loadChildren: () => import('./features/site-navigation/site-navigation.module')
         .then(m => m.SiteNavigationModule)
       }
     ]

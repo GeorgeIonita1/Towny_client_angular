@@ -9,8 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginPageComponent } from './core/pages/login/login.component';
 import { RegisterPageComponent } from './core/pages/register/register.component';
 import { HomePageComponent } from './core/pages/home-page/home-page.component';
-import { SiteNavigationModule } from './core/features/site-navigation/site-navigation.module';
-import { AuthenticationModule } from './core/features/authentication/authentication.module';
+import { AuthenticationModule } from './features/authentication/authentication.module';
+import { SiteNavigationModule } from './features/site-navigation/site-navigation.module';
 
 @NgModule({
   declarations: [
