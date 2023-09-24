@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UsersService } from '../../services/users.service';
+import { IUser } from '../../models';
 
 @Component({
   selector: 'app-users-list',
@@ -6,7 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./users-list.component.css']
 })
 export class UsersListComponent {
-  ngOnInit() {
-    console.log("i am initiated")
+  usersList: IUser[] = [];
+
+  constructor(private usersService: UsersService) {
+    this.usersService.getUsers().then(res => this.usersList = res)
   }
 }

@@ -6,15 +6,12 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule
   ],
   exports: [
     MatButtonModule,
@@ -22,7 +19,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     MatCardModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule
   ]
 })
 export class MaterialModule { }

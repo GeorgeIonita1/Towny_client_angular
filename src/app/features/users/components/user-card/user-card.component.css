@@ -1,0 +1,41 @@
+.card {
+    position: relative;
+    background-color: darkslategrey;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.status-bar {
+    position: relative;
+    bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-bar .menu {
+    position: relative;
+    left: 0.5rem;
+}
+
+.info div {
+    background-color: red;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    padding: 1rem;
+    margin: 0 auto 2rem;
+}
+
+.actions button {
+    display: inline-block;
+    width: 8rem;
+}
+
+.actions button:first-child {
+    margin-right: 1rem;
+}
