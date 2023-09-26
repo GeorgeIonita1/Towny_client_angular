@@ -1,0 +1,35 @@
+<form class="auth-form" [formGroup]="authenticationForm">
+    <mat-form-field appearance="outline" color="primary">
+        <mat-label>Email</mat-label>
+        <input id="email" type="email" required matInput formControlName="email">
+    </mat-form-field>
+    <div class="error-div" *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+        <span *ngIf="email?.errors?.['required']">*email is required</span>
+    </div>
+    
+    <mat-form-field appearance="outline" color="primary">
+        <mat-label>Password</mat-label>
+        <input type="password" required matInput formControlName="password">
+    </mat-form-field>
+    <div class="error-div" *ngIf="password?.invalid && (password?.dirty || password?.touched)">
+        <span *ngIf="password?.errors?.['required']">*password is required</span>
+        <span *ngIf="password?.errors?.['minlength']">*at least 6 characters</span>
+    </div>
+    
+    <mat-form-field *ngIf="!isLoginMode" appearance="outline" color="primary">
+        <mat-label>Confirm Password</mat-label>
+        <input type="password" required matInput formControlName="passwordConfirm">
+    </mat-form-field>
+    <div class="error-div" *ngIf="passwordConfirm?.invalid && (passwordConfirm?.dirty || passwordConfirm?.touched)">
+        <span *ngIf="passwordConfirm?.errors?.['required']">*password is required</span>
+        <span *ngIf="passwordConfirm?.errors?.['minlength']">*at least 6 characters</span>
+    </div>
+
+    <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        (click)="onSubmit()"
+        [disabled]="authenticationForm.invalid"
+    >Continue</button>
+</form>

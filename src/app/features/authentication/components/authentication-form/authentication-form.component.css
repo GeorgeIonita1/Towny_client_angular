@@ -1,0 +1,14 @@
+form > * {
+    display: block;
+    width: 100%;
+}
+
+mat-form-field {
+    margin-top: 0.5rem;
+}
+
+.error-div {
+    position: relative;
+    bottom: 1rem;
+    color: red;
+}
