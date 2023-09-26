@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { UsersService } from 'src/app/features/users/services/users.service';
+import { formAuthValidation } from 'src/app/shared/directives/form-auth-validation.directive';
 
 @Component({
   selector: 'app-authentication-form',
@@ -16,18 +17,18 @@ export class AuthenticationFormComponent {
 
   ngOnInit() {
     this.authenticationForm = new FormGroup({
-      email: new FormControl('', [
+      email: new FormControl(null, [
         Validators.required
       ]),
-      password: new FormControl('', [
+      password: new FormControl(null, [
         Validators.required,
         Validators.minLength(6)
       ]),
-      passwordConfirm: new FormControl('', [
+      passwordConfirm: new FormControl(null, [
         Validators.required,
         Validators.minLength(6)
       ])
-    })
+    }, { validators: formAuthValidation })
   }
 
   get email() { return this.authenticationForm.get('email'); }

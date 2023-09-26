@@ -24,6 +24,9 @@
         <span *ngIf="passwordConfirm?.errors?.['required']">*password is required</span>
         <span *ngIf="passwordConfirm?.errors?.['minlength']">*at least 6 characters</span>
     </div>
+    <div class="error-div" *ngIf="authenticationForm?.errors?.['filedsNotMatch'] && (authenticationForm?.dirty || authenticationForm?.touched)">
+        <span>password not match</span>
+    </div>
 
     <button
         mat-raised-button
