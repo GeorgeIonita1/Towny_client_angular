@@ -11,8 +11,8 @@ export class UsersService {
     return await response.json() ?? [];
   }
 
-  registerUser(email: string, password: string, passwordConfirm: string) {
-    console.log(email, password, passwordConfirm);
+  registerUser(email: string, password: string) {
+    console.log(email, password);
 
     fetch(`${baseURL}/users/register`, {
       method: 'POST',

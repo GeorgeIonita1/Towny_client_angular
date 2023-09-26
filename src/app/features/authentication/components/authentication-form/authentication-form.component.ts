@@ -35,8 +35,7 @@ export class AuthenticationFormComponent {
   get password() { return this.authenticationForm.get('password'); }
   get passwordConfirm() { return this.authenticationForm.get('passwordConfirm'); }
 
-
   onSubmit() {
-    console.log('sdfhdh')
+    this.usersService.registerUser(this.email?.value, this.password?.value)
   }
 }
